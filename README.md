@@ -22,3 +22,17 @@ Each student must create a playable GB Studio adventure game. This consists of:
     • Players must be have at least 4 quests to fulfill throughout the game, given to them by NPCs and tracked via the quest system similar to the pre-built one in the engine’s sample project. 
     • Quests should be structured in a hierarchical manner, with short-term quests that build towards the end goal (example: do a quest to get the keys to the car to reach the store)
     • Game world should consist of at least 7 scenes. 
+    
+### Team and presentation requirements
+This is a project to be done in teams – 3 designers per team. Each team should designate one person as primary writer/designer, artist, and sound designer each – though these roles will inevitably overlap. Presentations requirements are:
+    • < 3 minute demonstration of basic gameplay  
+    • Brief explanation of your game’s story and where the narrative goes. 
+    • Brief discussion of the design (what went well, what didn’t go well, etc.)
+    • Q&A time with design critics
+    • LOOK NICE! – design presentations should be thought of as important events, smart or business casual attire please.
+Team members are responsible for dividing work evenly and resolving interpersonal issues. If issues with team members persist, you may request a mediation session with the professor during office hours. 
+Evaluation
+Game projects will be marked only as complete or incomplete based on the above requirements. However, the quality of the game will be evaluated according to the following rubric and this evaluation will be taken into account for your class grade (see other document: grade level rubric.) 
+“Average” work will resemble standard choose-your-own-adventure works with little/no multimedia, “exceptional” works will explore stories in detail from new points of view or through minor characters with interesting use of multimedia.     
+    
+    
