@@ -1,4 +1,4 @@
-# prototyping_project_2
+# GAME prototyping Project 2
 
 ## Introduction
 
