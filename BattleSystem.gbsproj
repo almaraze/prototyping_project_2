@@ -5048,8 +5048,8 @@
                 15,
                 0,
                 0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 1,
                 1,
@@ -5173,7 +5173,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -5585,7 +5585,167 @@
             "id": "d073115a-65c0-4e6b-ad9b-b936e70c19f0",
             "x": 263.4603174603181,
             "y": 212.58730158730214,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "505ab846-0927-49ca-b8db-8a823a7b2707",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "f5267212-bccc-4a5d-8628-0a42022a6edb",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "19",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "1d6ca321-1931-4d15-ad56-1ad1d409c089",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You look around in\nthe refrigerator.",
+                                                "No milk... and you\nremember that you\nfinished off...",
+                                                "...the eggs this\nmorning for\nbreakfast.",
+                                                "Guess you'll have\nto get some eggs\nand milk...",
+                                                "...from the store\nbefore you can\nmake the cake."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "f4428c54-be62-4138-b8f6-d823efa0bbe2",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "19"
+                                        }
+                                    },
+                                    {
+                                        "id": "72b635a6-ea53-467b-ba87-caa37edac6e9",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "106b727e-eeec-4d02-af18-10392b9fee87",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "No milk or eggs\nhere..."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "01b06aca-a85e-47b6-b914-00a7d112d047",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "923ff6a7-5dfd-47ec-9d3c-febecc78e179",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "27380534-54b1-4d4e-b366-2e8e8620a51d",
+                    "x": 19,
+                    "y": 3
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "505ab846-0927-49ca-b8db-8a823a7b2707",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "a92608b4-0fac-4448-b750-00e1b8c6f176",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "20",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "bcafdee0-8ca6-4456-8985-f283f5ee806c",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "20"
+                                        }
+                                    },
+                                    {
+                                        "id": "b737a1c4-49b8-417b-a59a-ab721f8441b1",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You look in the\npantry and grab\nwhat's needed.",
+                                                "Sugar... Salt...\nBaking powder...",
+                                                "Wait... where's\nthe flour?",
+                                                "It looks like you\nused it all for\nthe last party.",
+                                                "You guess you'll\nhave to go get\nsome...",
+                                                "...so you can make\nthe cake.",
+                                                "You got Sugar!",
+                                                "You got Salt!",
+                                                "You got Baking\npowder!",
+                                                "Quest 1 complete."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "0c4357b5-1214-4b93-b425-7493a943a286",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "ca950be3-b3da-457c-96cf-b0fbc9efcb44",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You got what you\nneeded from the\npantry."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "62c4c09d-6342-4a5f-a783-eaaafa2a2602",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1172faa2-2cff-4a7f-bb63-410e7f9a908a",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "9455df84-3936-4b13-bafd-3a49cb4fa85b",
+                    "x": 17,
+                    "y": 3
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -5610,169 +5770,6 @@
                     "id": "1157353d-7e49-4ead-88c2-6471b2e47818",
                     "x": 9,
                     "y": 16,
-                    "width": 2,
-                    "height": 1
-                },
-                {
-                    "name": "",
-                    "trigger": "walk",
-                    "script": [
-                        {
-                            "id": "3e206e35-b42d-48e6-9be9-9b07c17bf2aa",
-                            "command": "EVENT_IF_FALSE",
-                            "args": {
-                                "variable": "19",
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "4125be50-9808-41ca-ac2d-3090bf1c0c57",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "You look around in\nthe refrigerator.",
-                                                "No milk... and you\nremember that you\nfinished off...",
-                                                "...the eggs this\nmorning for\nbreakfast.",
-                                                "Guess you'll have\nto get some eggs\nand milk...",
-                                                "...from the store\nbefore you can\nmake the cake."
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "cc215714-763b-47ef-986d-d4ebcc44166f",
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "19"
-                                        }
-                                    },
-                                    {
-                                        "id": "07933226-c003-40b1-99d7-fb97dcd88c96",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "02cd7dec-fc4c-4db4-b119-271f1005e633",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "No milk or eggs\nhere..."
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "11b6ee2b-68fa-491f-a4af-ec058a19cc8c",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "e3f0e166-3a0b-4b4e-9692-daa0a0aeb973",
-                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                            "args": {
-                                "actorId": "$self$",
-                                "x": 0,
-                                "y": 1,
-                                "moveType": "vertical",
-                                "useCollisions": false
-                            }
-                        },
-                        {
-                            "id": "6427a945-08c4-4948-9f60-70bcac90b494",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "id": "39a0741c-68e4-4f55-afed-e7708785b5a5",
-                    "x": 19,
-                    "y": 4,
-                    "width": 2,
-                    "height": 1
-                },
-                {
-                    "name": "Pantry",
-                    "trigger": "walk",
-                    "script": [
-                        {
-                            "id": "c222be57-4b2b-4424-992f-3aec2c7c8425",
-                            "command": "EVENT_IF_FALSE",
-                            "args": {
-                                "variable": "20",
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "2b3d585e-4d60-4b29-adff-ddde2b732eda",
-                                        "command": "EVENT_SET_TRUE",
-                                        "args": {
-                                            "variable": "20"
-                                        }
-                                    },
-                                    {
-                                        "id": "408d114d-b275-4218-b5d2-5e8823de6700",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "You look in the\npantry and grab\nwhat's needed.",
-                                                "Sugar... Salt...\nBaking powder...",
-                                                "Wait... where's\nthe flour?",
-                                                "It looks like you\nused it all for\nthe last party.",
-                                                "You guess you'll\nhave to go get\nsome...",
-                                                "...so you can make\nthe cake.",
-                                                "You got Sugar!",
-                                                "You got Salt!",
-                                                "You got Baking\npowder!",
-                                                "Quest 1 complete."
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "4d6e1172-bf0a-43d4-afca-441c8b847462",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "d84ff746-8af8-45ab-9db2-51927330e938",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "You got what you\nneeded from the\npantry."
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "d5d6e4ef-a9e2-414c-bd95-dcb864d5b3b6",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "36908fc8-4b0c-46c9-be1a-fb3483e9983d",
-                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                            "args": {
-                                "actorId": "$self$",
-                                "x": 0,
-                                "y": 1,
-                                "moveType": "vertical",
-                                "useCollisions": false
-                            }
-                        },
-                        {
-                            "id": "d2585ab7-41d9-40f5-8025-2d6657ad231f",
-                            "command": "EVENT_END"
-                        }
-                    ],
-                    "id": "4ca584b4-29fd-4cd7-a45e-9641714348ff",
-                    "x": 17,
-                    "y": 4,
                     "width": 2,
                     "height": 1
                 }
@@ -6216,7 +6213,7 @@
             "imageHeight": 144,
             "filename": "BattleScene.png",
             "inode": "4503599628110358",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "0cf503f2-6008-40a0-a972-30ac948cd5d1",
@@ -6227,7 +6224,7 @@
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
             "inode": "11821949022211464",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "3da882a8-474f-4969-bd3a-fa1d8c1f8335",
@@ -6238,7 +6235,7 @@
             "imageHeight": 144,
             "filename": "GameOver.png",
             "inode": "1688849861150828",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "c089206b-83a2-42e8-a23c-ed9850518df5",
@@ -6249,7 +6246,7 @@
             "imageHeight": 288,
             "filename": "Store.png",
             "inode": "10414574138342071",
-            "_v": 1614490882650
+            "_v": 1614548200366
         },
         {
             "id": "56948f89-964f-4899-a189-a9cfab2d90a2",
@@ -6260,7 +6257,7 @@
             "imageHeight": 144,
             "filename": "black.png",
             "inode": "3377699721414027",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "4fe67f04-d861-48cc-b3d1-a71630f99e55",
@@ -6271,7 +6268,7 @@
             "imageHeight": 144,
             "filename": "fight.png",
             "inode": "5066549581531673",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "04f74ea1-8b97-4db1-89bd-9f2293009906",
@@ -6282,7 +6279,7 @@
             "imageHeight": 144,
             "filename": "fight2.png",
             "inode": "11258999069166430",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "2c59cb09-d177-4323-bc12-a3352f0e86c6",
@@ -6293,7 +6290,7 @@
             "imageHeight": 144,
             "filename": "house-wide-1.png.png",
             "inode": "3096224744704088",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "15720789-d24e-4abd-b879-9b01d8e159db",
@@ -6304,7 +6301,7 @@
             "imageHeight": 144,
             "filename": "house-wide.png",
             "inode": "3377699721414746",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "0fd85ec2-df80-4385-8215-3ae4d080edc8",
@@ -6315,7 +6312,7 @@
             "imageHeight": 144,
             "filename": "house.png",
             "inode": "2251799814572139",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "2e0272a4-c7cb-4627-9a11-ab99ee8fb53f",
@@ -6326,7 +6323,7 @@
             "imageHeight": 144,
             "filename": "logo.png",
             "inode": "7318349395364406",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "15e3b1cf-9cd6-4669-a0cb-b52123d348d2",
@@ -6337,7 +6334,7 @@
             "imageHeight": 144,
             "filename": "placeholder-1.png.png",
             "inode": "4222124651547222",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -6348,7 +6345,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "9851624185613277",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "4e4f37e8-400d-40dc-aa93-8e33d8433dbc",
@@ -6359,7 +6356,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "109212290963801245",
-            "_v": 1614460737970
+            "_v": 1614548200366
         }
     ],
     "spriteSheets": [
@@ -6370,7 +6367,16 @@
             "type": "actor_animated",
             "filename": "Actor_Base.png",
             "inode": "83879543059813993",
-            "_v": 1614464358251
+            "_v": 1614548200367
+        },
+        {
+            "id": "505ab846-0927-49ca-b8db-8a823a7b2707",
+            "name": "EmptyObject",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "EmptyObject.png",
+            "inode": "215891307137110248",
+            "_v": 1614548200367
         },
         {
             "id": "5cf6d63a-b950-4e2b-90fd-31a204aea31f",
@@ -6379,7 +6385,7 @@
             "type": "actor",
             "filename": "Gnome.png",
             "inode": "3659174697979110",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "d07532e8-8349-4861-8175-8bfbaa15caa7",
@@ -6388,7 +6394,7 @@
             "type": "static",
             "filename": "Goblin.png",
             "inode": "4785074604821750",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "0b1083b9-fcf5-439d-a2bf-6fa8a2ce5f29",
@@ -6397,7 +6403,7 @@
             "type": "static",
             "filename": "Heart.png",
             "inode": "5066549581532415",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "e453cf5f-bfd5-4af5-9774-0bef47b5c46f",
@@ -6406,7 +6412,7 @@
             "type": "animated",
             "filename": "Items.png",
             "inode": "11258999069166858",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "c0492023-805e-4b09-8b5f-8697791c365e",
@@ -6415,7 +6421,7 @@
             "type": "actor",
             "filename": "Squirrel.png",
             "inode": "1970324837715230",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -6424,7 +6430,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "3659174697979168",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -6433,7 +6439,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "5348024558243105",
-            "_v": 1614460737970
+            "_v": 1614548200366
         },
         {
             "id": "90eeb2c9-9514-4174-8009-369ad7437609",
@@ -6442,7 +6448,7 @@
             "type": "static",
             "filename": "cat.png",
             "inode": "6473924465085730",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "3c2627bc-ea8e-413d-aa41-10d690a08d20",
@@ -6451,7 +6457,7 @@
             "type": "actor",
             "filename": "checkbox.png",
             "inode": "5066549581532453",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "6b031ea9-4b0a-4819-aba1-940fe406668a",
@@ -6460,7 +6466,7 @@
             "type": "actor",
             "filename": "clerk_1.png",
             "inode": "4785074604968577",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "806becea-cf4e-4fb7-9950-614cc39d0928",
@@ -6469,7 +6475,7 @@
             "type": "static",
             "filename": "dog.png",
             "inode": "4503599628111149",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "d0a522f3-8d7f-4727-b218-9a370bfbab50",
@@ -6478,7 +6484,7 @@
             "type": "animated",
             "filename": "duck.png",
             "inode": "4222124651400498",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "a594f0a6-f877-4272-9080-f64e7a1d8fef",
@@ -6487,7 +6493,7 @@
             "type": "actor",
             "filename": "egg_man.png",
             "inode": "199284283511194715",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "e4a358fe-96a0-4095-9bed-348cec810e21",
@@ -6496,7 +6502,7 @@
             "type": "animated",
             "filename": "fire.png",
             "inode": "5910974511664471",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "dcd41079-f202-4cfe-8424-eb168e6afcc0",
@@ -6505,7 +6511,7 @@
             "type": "animated",
             "filename": "flower1.png",
             "inode": "4785074604821850",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "9ae1ac5b-5369-498c-8768-4e2737079ce6",
@@ -6514,7 +6520,7 @@
             "type": "static",
             "filename": "heartShort.png",
             "inode": "6192449488375132",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "65782c03-8514-4eb3-896e-40472017d860",
@@ -6523,7 +6529,7 @@
             "type": "static",
             "filename": "ice.png",
             "inode": "4222124651400547",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "f1f775c9-0d4c-44e2-bbdd-7d6d9f9b299e",
@@ -6532,7 +6538,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "4785074604821860",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "9704da4d-90d4-427a-9e3a-332a8124d551",
@@ -6541,7 +6547,7 @@
             "type": "actor",
             "filename": "npc002.png",
             "inode": "3377699721268648",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "a61853ad-965e-4f60-bc3f-05aa00439b57",
@@ -6550,7 +6556,7 @@
             "type": "actor_animated",
             "filename": "npc003.png",
             "inode": "3377699721268683",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "169aa135-67c4-42da-9fc8-6524dcd164a5",
@@ -6559,7 +6565,7 @@
             "type": "actor_animated",
             "filename": "player (2).png",
             "inode": "4222124651400674",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "54e57289-5f4b-42f7-bcc6-9f7d3bb36ed6",
@@ -6568,7 +6574,7 @@
             "type": "actor_animated",
             "filename": "player.png",
             "inode": "3096224744558090",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "ee5aabfa-078a-49e3-9bd3-05ebcd77882a",
@@ -6577,7 +6583,7 @@
             "type": "actor_animated",
             "filename": "player_sprite.png",
             "inode": "2533274791282797",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "7f1e6bf2-64d0-4c24-9dc7-dff33009072f",
@@ -6586,7 +6592,7 @@
             "type": "static",
             "filename": "radio.png",
             "inode": "2814749767847436",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "d263b4bc-c6b3-4be2-8a67-99b1996965f9",
@@ -6595,7 +6601,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "2814749767847439",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "dfbb4140-9eae-47d2-9e8e-da9847cd6805",
@@ -6604,7 +6610,7 @@
             "type": "static",
             "filename": "sage.png",
             "inode": "2814749767847440",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "4d5422fb-6e64-42fb-8952-12cef6d3285a",
@@ -6613,7 +6619,7 @@
             "type": "animated",
             "filename": "savepoint.png",
             "inode": "3096224744558098",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "578be118-3fad-4b50-9070-060a15e3d744",
@@ -6622,7 +6628,7 @@
             "type": "static",
             "filename": "seed.png",
             "inode": "4222124651400728",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "e5b96078-d6cc-4d97-9eef-a12fa26599a9",
@@ -6631,7 +6637,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "4503599628111385",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -6640,7 +6646,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2814749767847454",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "eca20757-c3b2-4443-b0cc-31ea3e2a0051",
@@ -6649,7 +6655,7 @@
             "type": "animated",
             "filename": "sword.png",
             "inode": "3096224744558115",
-            "_v": 1614460737970
+            "_v": 1614548200367
         },
         {
             "id": "84cd73df-fec7-4a78-9b23-cd1964988d98",
@@ -6658,7 +6664,7 @@
             "type": "static",
             "filename": "torch.png",
             "inode": "2814749767847464",
-            "_v": 1614460737971
+            "_v": 1614548200367
         }
     ],
     "palettes": [
@@ -6807,7 +6813,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "6755399441796153",
-            "_v": 1614460737910
+            "_v": 1614548200270
         }
     ],
     "variables": [
@@ -6950,9 +6956,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 496,
-        "worldScrollY": 1129,
-        "zoom": 250,
+        "worldScrollX": 1634,
+        "worldScrollY": 1450,
+        "zoom": 650,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
