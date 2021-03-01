@@ -1768,21 +1768,54 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "c28083ec-2b43-4a1c-b3d7-151586f61c97",
-                            "command": "EVENT_TEXT",
+                            "id": "35300ae9-2dee-4011-9ef9-6078996dd232",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "text": [
-                                    "Milk Puzzle Game\nPlace holder.",
-                                    "You solve the\npuzzle."
+                                "variable": "23",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "c28083ec-2b43-4a1c-b3d7-151586f61c97",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Milk Puzzle Game\nPlace holder.",
+                                                "You solve the\npuzzle."
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "8bdd8ea0-2a77-432d-9ab6-b3a15b161072",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "23"
+                                        }
+                                    },
+                                    {
+                                        "id": "55e84c9f-4d86-4d42-b046-f6e76b4dbb0b",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
-                            "id": "8bdd8ea0-2a77-432d-9ab6-b3a15b161072",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "23"
+                                "false": [
+                                    {
+                                        "id": "a0629c4f-e22c-4e39-b6c8-7c522f66899a",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You already have\nmilk."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "d76a80fe-6d79-4fdf-b21f-595ec16890ac",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1810,22 +1843,117 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "dbe1a099-63f3-450b-b6b0-cf8bce27be74",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "$#@%! ",
-                                    "Unbelievable.  Not\na single egg to be\nseen here.",
-                                    "Maybe you can ask\nan employee near\nthe counter..."
-                                ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
                             "id": "72b93e75-1d5b-4b58-aca5-620771d18c27",
                             "command": "EVENT_ACTOR_SHOW",
                             "args": {
                                 "actorId": "b72d8c8a-fc73-4309-ba94-9bc41a348c0a"
+                            }
+                        },
+                        {
+                            "id": "b8b7695f-984d-438d-977a-001c46b6029d",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "31",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "dbe1a099-63f3-450b-b6b0-cf8bce27be74",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "$#@%! ",
+                                                "Unbelievable.  Not\na single egg to be\nseen here.",
+                                                "Maybe you can ask\nan employee near\nthe counter..."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "fc0cba60-072e-4c95-a2fb-c97b52922cd3",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "31"
+                                        }
+                                    },
+                                    {
+                                        "id": "9e028f8a-54c3-4720-8175-ee531e6db63c",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "94e271a5-1fbf-43e9-9e2e-f2a4d6822931",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "30",
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "3520f806-6770-4f37-bbb4-7cc8920f0171",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "No eggs in here...\n"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "adbf1325-55d6-4534-a012-fdeda8c211c5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "10c13038-f671-4e08-b00b-82169c839ac3",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "a5233dfe-d2cf-4e97-bee6-82d2855a9ce8",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "102",
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "374ef9ec-15f7-421c-99c8-7822b16b48ac",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You already have\neggs."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "942ccdfc-e95c-4a50-9be0-67c294d4459e",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "ef3159c6-3c6e-44a0-8565-5a0c3e156529",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "0f9731a1-d879-4c19-b66e-9fd8fc2e5c56",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1853,20 +1981,52 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "091be3a5-f841-4a90-8e8d-fb11b6441d0b",
-                            "command": "EVENT_SET_TRUE",
+                            "id": "f1581550-d01d-44f9-a09c-bb0fd90fa3d2",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "24"
-                            }
-                        },
-                        {
-                            "id": "884f36d6-3453-48e9-8d11-91a63bef4666",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Got the Flour!"
+                                "variable": "24",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "884f36d6-3453-48e9-8d11-91a63bef4666",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Got the Flour!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "091be3a5-f841-4a90-8e8d-fb11b6441d0b",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "24"
+                                        }
+                                    },
+                                    {
+                                        "id": "9ac40c77-49ad-42f6-864f-9a1d313d7ba2",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "0d611563-728a-4a0b-8fd8-eeb39bef8976",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You already got\nthe flour."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "237bcf1c-54b8-42f8-b313-362cfcebf8a4",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1894,23 +2054,64 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "517b6fcc-d6c4-4091-becb-3e52886fde68",
-                            "command": "EVENT_TEXT",
+                            "id": "ff61fac8-0487-4c16-9398-07532c3900e4",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "text": [
-                                    "You said you're\nlooking for eggs?\nYeah, sorry...",
-                                    "If there aren't\nany on the shelf,\nthen we're out.",
-                                    "Some guy just\nchecked out with a\ncarton of them...",
-                                    "Maybe ask him and\nhe'll split some\nwith you."
+                                "variable": "102",
+                                "__collapseElse": false,
+                                "__disableElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "14722fa5-69ea-4e18-9a2f-a9edd1c7f7f4",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "12929099-bf1f-447b-afc5-2b8f6319c50b"
+                                        }
+                                    },
+                                    {
+                                        "id": "36c71061-8891-40c8-b0b5-f38e4fb6cd4e",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "30"
+                                        }
+                                    },
+                                    {
+                                        "id": "517b6fcc-d6c4-4091-becb-3e52886fde68",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You said you're\nlooking for eggs?\nYeah, sorry...",
+                                                "If there aren't\nany on the shelf,\nthen we're out.",
+                                                "Some guy just\nchecked out with a\ncarton of them...",
+                                                "Maybe ask him and\nhe'll split some\nwith you."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "c7e24994-d6a3-4c76-a9c4-969dc36d1549",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
-                            "id": "14722fa5-69ea-4e18-9a2f-a9edd1c7f7f4",
-                            "command": "EVENT_ACTOR_SHOW",
-                            "args": {
-                                "actorId": "12929099-bf1f-447b-afc5-2b8f6319c50b"
+                                "false": [
+                                    {
+                                        "id": "3991f2d4-88b4-49ee-84d7-f7aa23e532f3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Looks like you\nfound your eggs...\nGood for you.",
+                                                "Please don't go\nstarting anymore\nfights, sir..."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "ef86a368-8c20-4ebc-89d4-91b10cdbb546",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1920,10 +2121,39 @@
                     ],
                     "startScript": [
                         {
-                            "id": "78079a71-e698-4456-ab1c-ccdba8d633e3",
-                            "command": "EVENT_ACTOR_HIDE",
+                            "id": "92481075-dbb2-4dc3-8934-6494b8ebe29c",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "actorId": "$self$"
+                                "variable": "31",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "78079a71-e698-4456-ab1c-ccdba8d633e3",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "58d606b3-2321-4b83-99ce-c5c3c3397e9c",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "864bebba-8bac-4f92-b0f2-791d65def06a",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "28c29f81-007a-4cff-8010-707657db02a3",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -1931,7 +2161,42 @@
                             "command": "EVENT_END"
                         }
                     ],
-                    "updateScript": [],
+                    "updateScript": [
+                        {
+                            "id": "48e663bc-f14f-4870-9292-cd62c3dc536e",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "31",
+                                "__collapseElse": false,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "141ebcec-ae89-49b3-bf53-cc274446832a",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "922b417c-e367-4133-b176-291bc59e74da",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "35c085f5-2643-415b-af93-b1df09d9e129",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "155b12f6-94b9-449f-ab6e-3963e4ea35d1",
+                            "command": "EVENT_END"
+                        }
+                    ],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -2026,10 +2291,33 @@
                     ],
                     "startScript": [
                         {
-                            "id": "c4bb6cfc-e76c-4b9b-87a0-331038c16869",
-                            "command": "EVENT_ACTOR_HIDE",
+                            "id": "d591a8ca-d63e-4b22-8b45-a4c7add05e2e",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "actorId": "$self$"
+                                "variable": "30",
+                                "__collapseElse": false,
+                                "__disableElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "c4bb6cfc-e76c-4b9b-87a0-331038c16869",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "19797579-e178-4431-ba57-0a461670b5b3",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "3d0d5de1-aaef-46f2-a2f3-e0b70c1b4c98",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -2060,6 +2348,36 @@
                                     }
                                 ],
                                 "false": [
+                                    {
+                                        "id": "c1686a9b-f1ac-4903-a698-d98b4b92aeb4",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "30",
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "ed8bbcfb-c2a8-4e16-9c39-5781a5e9efb8",
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "8a6592cf-57cd-4d29-9360-0294d1f3f0de",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "01101a34-135b-4e7f-b540-7af07391cab5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
                                     {
                                         "id": "0a10718d-d94b-4f6b-b8bb-d9e0f23d9f91",
                                         "command": "EVENT_END"
@@ -3844,6 +4162,11 @@
                     "args": {
                         "actorId": "$self$"
                     }
+                },
+                {
+                    "id": "14b324ce-fe6b-47ca-a9cc-4262c62350d2",
+                    "command": "EVENT_RESET_VARIABLES",
+                    "args": {}
                 },
                 {
                     "id": "cb8ce13d-475f-4197-8748-8f28bdb3a6dc",
@@ -8291,7 +8614,7 @@
             "imageHeight": 144,
             "filename": "BattleScene.png",
             "inode": "4503599628110358",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "0cf503f2-6008-40a0-a972-30ac948cd5d1",
@@ -8302,7 +8625,7 @@
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
             "inode": "11821949022211464",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "008700c3-159a-4738-8771-1ab8cbbabab1",
@@ -8313,7 +8636,7 @@
             "imageHeight": 144,
             "filename": "Fight Egg Man.png",
             "inode": "46443371157341466",
-            "_v": 1614562270428
+            "_v": 1614576628718
         },
         {
             "id": "3da882a8-474f-4969-bd3a-fa1d8c1f8335",
@@ -8324,7 +8647,7 @@
             "imageHeight": 144,
             "filename": "GameOver.png",
             "inode": "1688849861150828",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "c089206b-83a2-42e8-a23c-ed9850518df5",
@@ -8335,7 +8658,7 @@
             "imageHeight": 288,
             "filename": "Store.png",
             "inode": "10414574138342071",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "56948f89-964f-4899-a189-a9cfab2d90a2",
@@ -8346,7 +8669,7 @@
             "imageHeight": 144,
             "filename": "black.png",
             "inode": "3377699721414027",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "4fe67f04-d861-48cc-b3d1-a71630f99e55",
@@ -8357,7 +8680,7 @@
             "imageHeight": 144,
             "filename": "fight.png",
             "inode": "5066549581531673",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "04f74ea1-8b97-4db1-89bd-9f2293009906",
@@ -8368,7 +8691,7 @@
             "imageHeight": 144,
             "filename": "fight2.png",
             "inode": "11258999069166430",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "2c59cb09-d177-4323-bc12-a3352f0e86c6",
@@ -8379,7 +8702,7 @@
             "imageHeight": 144,
             "filename": "house-wide-1.png.png",
             "inode": "3096224744704088",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "15720789-d24e-4abd-b879-9b01d8e159db",
@@ -8390,7 +8713,7 @@
             "imageHeight": 144,
             "filename": "house-wide.png",
             "inode": "3377699721414746",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "0fd85ec2-df80-4385-8215-3ae4d080edc8",
@@ -8401,7 +8724,7 @@
             "imageHeight": 144,
             "filename": "house.png",
             "inode": "2251799814572139",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "2e0272a4-c7cb-4627-9a11-ab99ee8fb53f",
@@ -8412,7 +8735,7 @@
             "imageHeight": 144,
             "filename": "logo.png",
             "inode": "7318349395364406",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "15e3b1cf-9cd6-4669-a0cb-b52123d348d2",
@@ -8423,7 +8746,7 @@
             "imageHeight": 144,
             "filename": "placeholder-1.png.png",
             "inode": "4222124651547222",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -8434,7 +8757,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "9851624185613277",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "4e4f37e8-400d-40dc-aa93-8e33d8433dbc",
@@ -8445,7 +8768,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "109212290963801245",
-            "_v": 1614548200366
+            "_v": 1614576628718
         }
     ],
     "spriteSheets": [
@@ -8456,7 +8779,7 @@
             "type": "actor_animated",
             "filename": "Actor_Base.png",
             "inode": "83879543059813993",
-            "_v": 1614548200367
+            "_v": 1614576628721
         },
         {
             "id": "505ab846-0927-49ca-b8db-8a823a7b2707",
@@ -8465,7 +8788,7 @@
             "type": "static",
             "filename": "EmptyObject.png",
             "inode": "215891307137110248",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "5cf6d63a-b950-4e2b-90fd-31a204aea31f",
@@ -8474,7 +8797,7 @@
             "type": "actor",
             "filename": "Gnome.png",
             "inode": "3659174697979110",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "d07532e8-8349-4861-8175-8bfbaa15caa7",
@@ -8483,7 +8806,7 @@
             "type": "static",
             "filename": "Goblin.png",
             "inode": "4785074604821750",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "0b1083b9-fcf5-439d-a2bf-6fa8a2ce5f29",
@@ -8492,7 +8815,7 @@
             "type": "static",
             "filename": "Heart.png",
             "inode": "5066549581532415",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "e453cf5f-bfd5-4af5-9774-0bef47b5c46f",
@@ -8501,7 +8824,7 @@
             "type": "animated",
             "filename": "Items.png",
             "inode": "11258999069166858",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "c0492023-805e-4b09-8b5f-8697791c365e",
@@ -8510,7 +8833,7 @@
             "type": "actor",
             "filename": "Squirrel.png",
             "inode": "1970324837715230",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -8519,7 +8842,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "3659174697979168",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -8528,7 +8851,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "5348024558243105",
-            "_v": 1614548200366
+            "_v": 1614576628718
         },
         {
             "id": "90eeb2c9-9514-4174-8009-369ad7437609",
@@ -8537,7 +8860,7 @@
             "type": "static",
             "filename": "cat.png",
             "inode": "6473924465085730",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "3c2627bc-ea8e-413d-aa41-10d690a08d20",
@@ -8546,7 +8869,7 @@
             "type": "actor",
             "filename": "checkbox.png",
             "inode": "5066549581532453",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "6b031ea9-4b0a-4819-aba1-940fe406668a",
@@ -8555,7 +8878,7 @@
             "type": "actor",
             "filename": "clerk_1.png",
             "inode": "4785074604968577",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "806becea-cf4e-4fb7-9950-614cc39d0928",
@@ -8564,7 +8887,7 @@
             "type": "static",
             "filename": "dog.png",
             "inode": "4503599628111149",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "d0a522f3-8d7f-4727-b218-9a370bfbab50",
@@ -8573,7 +8896,7 @@
             "type": "animated",
             "filename": "duck.png",
             "inode": "4222124651400498",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "a594f0a6-f877-4272-9080-f64e7a1d8fef",
@@ -8582,7 +8905,7 @@
             "type": "actor",
             "filename": "egg_man.png",
             "inode": "199284283511194715",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "e4a358fe-96a0-4095-9bed-348cec810e21",
@@ -8591,7 +8914,7 @@
             "type": "animated",
             "filename": "fire.png",
             "inode": "5910974511664471",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "dcd41079-f202-4cfe-8424-eb168e6afcc0",
@@ -8600,7 +8923,7 @@
             "type": "animated",
             "filename": "flower1.png",
             "inode": "4785074604821850",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "9ae1ac5b-5369-498c-8768-4e2737079ce6",
@@ -8609,7 +8932,7 @@
             "type": "static",
             "filename": "heartShort.png",
             "inode": "6192449488375132",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "65782c03-8514-4eb3-896e-40472017d860",
@@ -8618,7 +8941,7 @@
             "type": "static",
             "filename": "ice.png",
             "inode": "4222124651400547",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "f1f775c9-0d4c-44e2-bbdd-7d6d9f9b299e",
@@ -8627,7 +8950,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "4785074604821860",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "9704da4d-90d4-427a-9e3a-332a8124d551",
@@ -8636,7 +8959,7 @@
             "type": "actor",
             "filename": "npc002.png",
             "inode": "3377699721268648",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "a61853ad-965e-4f60-bc3f-05aa00439b57",
@@ -8645,7 +8968,7 @@
             "type": "actor_animated",
             "filename": "npc003.png",
             "inode": "3377699721268683",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "169aa135-67c4-42da-9fc8-6524dcd164a5",
@@ -8654,7 +8977,7 @@
             "type": "actor_animated",
             "filename": "player (2).png",
             "inode": "4222124651400674",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "54e57289-5f4b-42f7-bcc6-9f7d3bb36ed6",
@@ -8663,7 +8986,7 @@
             "type": "actor_animated",
             "filename": "player.png",
             "inode": "3096224744558090",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "ee5aabfa-078a-49e3-9bd3-05ebcd77882a",
@@ -8672,7 +8995,7 @@
             "type": "actor_animated",
             "filename": "player_sprite.png",
             "inode": "2533274791282797",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "7f1e6bf2-64d0-4c24-9dc7-dff33009072f",
@@ -8681,7 +9004,7 @@
             "type": "static",
             "filename": "radio.png",
             "inode": "2814749767847436",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "d263b4bc-c6b3-4be2-8a67-99b1996965f9",
@@ -8690,7 +9013,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "2814749767847439",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "dfbb4140-9eae-47d2-9e8e-da9847cd6805",
@@ -8699,7 +9022,7 @@
             "type": "static",
             "filename": "sage.png",
             "inode": "2814749767847440",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "4d5422fb-6e64-42fb-8952-12cef6d3285a",
@@ -8708,7 +9031,7 @@
             "type": "animated",
             "filename": "savepoint.png",
             "inode": "3096224744558098",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "578be118-3fad-4b50-9070-060a15e3d744",
@@ -8717,7 +9040,7 @@
             "type": "static",
             "filename": "seed.png",
             "inode": "4222124651400728",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "e5b96078-d6cc-4d97-9eef-a12fa26599a9",
@@ -8726,7 +9049,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "4503599628111385",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -8735,7 +9058,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2814749767847454",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "eca20757-c3b2-4443-b0cc-31ea3e2a0051",
@@ -8744,7 +9067,7 @@
             "type": "animated",
             "filename": "sword.png",
             "inode": "3096224744558115",
-            "_v": 1614548200367
+            "_v": 1614576628718
         },
         {
             "id": "84cd73df-fec7-4a78-9b23-cd1964988d98",
@@ -8753,7 +9076,7 @@
             "type": "static",
             "filename": "torch.png",
             "inode": "2814749767847464",
-            "_v": 1614548200367
+            "_v": 1614576628721
         }
     ],
     "palettes": [
@@ -8902,7 +9225,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "6755399441796153",
-            "_v": 1614548200270
+            "_v": 1614576628596
         }
     ],
     "variables": [
@@ -8949,6 +9272,10 @@
         {
             "id": "101",
             "name": "Enemy 2 Defeated"
+        },
+        {
+            "id": "102",
+            "name": "Egg Man Defeated"
         },
         {
             "id": "508",
@@ -9059,8 +9386,12 @@
             "name": "Enemy Miss"
         },
         {
-            "id": "102",
-            "name": "Egg Man Defeated"
+            "id": "30",
+            "name": "Show egg man"
+        },
+        {
+            "id": "31",
+            "name": "Show Clerk"
         }
     ],
     "settings": {
@@ -9069,9 +9400,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 47,
-        "worldScrollY": 1000,
-        "zoom": 250,
+        "worldScrollX": 466,
+        "worldScrollY": 450,
+        "zoom": 200,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
