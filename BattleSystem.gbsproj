@@ -1492,14 +1492,14 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "id": "c8c41c06-7ff4-43d1-aae3-4894702abe63",
-            "x": 237.6,
-            "y": 391.7015873015876,
+            "x": 268.26666666666654,
+            "y": 389.7015873015877,
             "actors": [
                 {
                     "name": "TestCustomer",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "9704da4d-90d4-427a-9e3a-332a8124d551",
+                    "spriteSheetId": "f3ec28fd-dd87-40ad-9c3b-2728f19a389f",
                     "spriteType": "actor",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -1630,7 +1630,7 @@
                     "name": "TestCustomer",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "169aa135-67c4-42da-9fc8-6524dcd164a5",
+                    "spriteSheetId": "f1f775c9-0d4c-44e2-bbdd-7d6d9f9b299e",
                     "spriteType": "actor",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -2706,7 +2706,7 @@
         },
         {
             "name": "Fight1",
-            "backgroundId": "4fe67f04-d861-48cc-b3d1-a71630f99e55",
+            "backgroundId": "25233748-0ebf-4fc8-b3fe-0c7c96d9bc31",
             "width": 20,
             "height": 18,
             "collisions": [],
@@ -7153,7 +7153,7 @@
         },
         {
             "name": "Fight for Eggs.",
-            "backgroundId": "008700c3-159a-4738-8771-1ab8cbbabab1",
+            "backgroundId": "a2d59af5-57e3-4045-9ba8-9474f63fce4b",
             "width": 20,
             "height": 18,
             "collisions": [],
@@ -8614,7 +8614,18 @@
             "imageHeight": 144,
             "filename": "BattleScene.png",
             "inode": "4503599628110358",
-            "_v": 1614576628718
+            "_v": 1614708185676
+        },
+        {
+            "id": "25233748-0ebf-4fc8-b3fe-0c7c96d9bc31",
+            "name": "Emo_kid_fight",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Emo_kid_fight.png",
+            "inode": "23080948090475762",
+            "_v": 1614708185677
         },
         {
             "id": "0cf503f2-6008-40a0-a972-30ac948cd5d1",
@@ -8625,7 +8636,7 @@
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
             "inode": "11821949022211464",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "008700c3-159a-4738-8771-1ab8cbbabab1",
@@ -8636,7 +8647,7 @@
             "imageHeight": 144,
             "filename": "Fight Egg Man.png",
             "inode": "46443371157341466",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "3da882a8-474f-4969-bd3a-fa1d8c1f8335",
@@ -8647,7 +8658,18 @@
             "imageHeight": 144,
             "filename": "GameOver.png",
             "inode": "1688849861150828",
-            "_v": 1614576628718
+            "_v": 1614708185677
+        },
+        {
+            "id": "98a1aa28-d0cc-416b-9354-147a9c93c5be",
+            "name": "Milk Image",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Milk Image.png",
+            "inode": "3940649674841308",
+            "_v": 1614708185677
         },
         {
             "id": "c089206b-83a2-42e8-a23c-ed9850518df5",
@@ -8658,7 +8680,7 @@
             "imageHeight": 288,
             "filename": "Store.png",
             "inode": "10414574138342071",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "56948f89-964f-4899-a189-a9cfab2d90a2",
@@ -8669,7 +8691,18 @@
             "imageHeight": 144,
             "filename": "black.png",
             "inode": "3377699721414027",
-            "_v": 1614576628718
+            "_v": 1614708185676
+        },
+        {
+            "id": "a2d59af5-57e3-4045-9ba8-9474f63fce4b",
+            "name": "eggman",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "eggman.png",
+            "inode": "27866022694581119",
+            "_v": 1614708185677
         },
         {
             "id": "4fe67f04-d861-48cc-b3d1-a71630f99e55",
@@ -8680,7 +8713,7 @@
             "imageHeight": 144,
             "filename": "fight.png",
             "inode": "5066549581531673",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "04f74ea1-8b97-4db1-89bd-9f2293009906",
@@ -8691,7 +8724,7 @@
             "imageHeight": 144,
             "filename": "fight2.png",
             "inode": "11258999069166430",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "2c59cb09-d177-4323-bc12-a3352f0e86c6",
@@ -8702,7 +8735,7 @@
             "imageHeight": 144,
             "filename": "house-wide-1.png.png",
             "inode": "3096224744704088",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "15720789-d24e-4abd-b879-9b01d8e159db",
@@ -8713,7 +8746,7 @@
             "imageHeight": 144,
             "filename": "house-wide.png",
             "inode": "3377699721414746",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "0fd85ec2-df80-4385-8215-3ae4d080edc8",
@@ -8724,7 +8757,7 @@
             "imageHeight": 144,
             "filename": "house.png",
             "inode": "2251799814572139",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "2e0272a4-c7cb-4627-9a11-ab99ee8fb53f",
@@ -8735,7 +8768,7 @@
             "imageHeight": 144,
             "filename": "logo.png",
             "inode": "7318349395364406",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "15e3b1cf-9cd6-4669-a0cb-b52123d348d2",
@@ -8746,7 +8779,7 @@
             "imageHeight": 144,
             "filename": "placeholder-1.png.png",
             "inode": "4222124651547222",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -8757,7 +8790,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "9851624185613277",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "4e4f37e8-400d-40dc-aa93-8e33d8433dbc",
@@ -8768,7 +8801,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "109212290963801245",
-            "_v": 1614576628718
+            "_v": 1614708185677
         }
     ],
     "spriteSheets": [
@@ -8779,7 +8812,16 @@
             "type": "actor_animated",
             "filename": "Actor_Base.png",
             "inode": "83879543059813993",
-            "_v": 1614576628721
+            "_v": 1614708185677
+        },
+        {
+            "id": "f3ec28fd-dd87-40ad-9c3b-2728f19a389f",
+            "name": "Emo_kid_NPC",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Emo_kid_NPC.png",
+            "inode": "36028797019239977",
+            "_v": 1614708185678
         },
         {
             "id": "505ab846-0927-49ca-b8db-8a823a7b2707",
@@ -8788,7 +8830,7 @@
             "type": "static",
             "filename": "EmptyObject.png",
             "inode": "215891307137110248",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "5cf6d63a-b950-4e2b-90fd-31a204aea31f",
@@ -8797,7 +8839,7 @@
             "type": "actor",
             "filename": "Gnome.png",
             "inode": "3659174697979110",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "d07532e8-8349-4861-8175-8bfbaa15caa7",
@@ -8806,7 +8848,7 @@
             "type": "static",
             "filename": "Goblin.png",
             "inode": "4785074604821750",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "0b1083b9-fcf5-439d-a2bf-6fa8a2ce5f29",
@@ -8815,7 +8857,7 @@
             "type": "static",
             "filename": "Heart.png",
             "inode": "5066549581532415",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "e453cf5f-bfd5-4af5-9774-0bef47b5c46f",
@@ -8824,7 +8866,7 @@
             "type": "animated",
             "filename": "Items.png",
             "inode": "11258999069166858",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "c0492023-805e-4b09-8b5f-8697791c365e",
@@ -8833,7 +8875,7 @@
             "type": "actor",
             "filename": "Squirrel.png",
             "inode": "1970324837715230",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -8842,7 +8884,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "3659174697979168",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -8851,7 +8893,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "5348024558243105",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "90eeb2c9-9514-4174-8009-369ad7437609",
@@ -8860,7 +8902,7 @@
             "type": "static",
             "filename": "cat.png",
             "inode": "6473924465085730",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "3c2627bc-ea8e-413d-aa41-10d690a08d20",
@@ -8869,7 +8911,7 @@
             "type": "actor",
             "filename": "checkbox.png",
             "inode": "5066549581532453",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "6b031ea9-4b0a-4819-aba1-940fe406668a",
@@ -8878,7 +8920,7 @@
             "type": "actor",
             "filename": "clerk_1.png",
             "inode": "4785074604968577",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "806becea-cf4e-4fb7-9950-614cc39d0928",
@@ -8887,7 +8929,7 @@
             "type": "static",
             "filename": "dog.png",
             "inode": "4503599628111149",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "d0a522f3-8d7f-4727-b218-9a370bfbab50",
@@ -8896,7 +8938,7 @@
             "type": "animated",
             "filename": "duck.png",
             "inode": "4222124651400498",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "a594f0a6-f877-4272-9080-f64e7a1d8fef",
@@ -8905,7 +8947,7 @@
             "type": "actor",
             "filename": "egg_man.png",
             "inode": "199284283511194715",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "e4a358fe-96a0-4095-9bed-348cec810e21",
@@ -8914,7 +8956,7 @@
             "type": "animated",
             "filename": "fire.png",
             "inode": "5910974511664471",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "dcd41079-f202-4cfe-8424-eb168e6afcc0",
@@ -8923,7 +8965,7 @@
             "type": "animated",
             "filename": "flower1.png",
             "inode": "4785074604821850",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "9ae1ac5b-5369-498c-8768-4e2737079ce6",
@@ -8932,7 +8974,7 @@
             "type": "static",
             "filename": "heartShort.png",
             "inode": "6192449488375132",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "65782c03-8514-4eb3-896e-40472017d860",
@@ -8941,7 +8983,7 @@
             "type": "static",
             "filename": "ice.png",
             "inode": "4222124651400547",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "f1f775c9-0d4c-44e2-bbdd-7d6d9f9b299e",
@@ -8950,7 +8992,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "4785074604821860",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "9704da4d-90d4-427a-9e3a-332a8124d551",
@@ -8959,7 +9001,7 @@
             "type": "actor",
             "filename": "npc002.png",
             "inode": "3377699721268648",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "a61853ad-965e-4f60-bc3f-05aa00439b57",
@@ -8968,7 +9010,7 @@
             "type": "actor_animated",
             "filename": "npc003.png",
             "inode": "3377699721268683",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "169aa135-67c4-42da-9fc8-6524dcd164a5",
@@ -8977,7 +9019,7 @@
             "type": "actor_animated",
             "filename": "player (2).png",
             "inode": "4222124651400674",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "54e57289-5f4b-42f7-bcc6-9f7d3bb36ed6",
@@ -8986,7 +9028,7 @@
             "type": "actor_animated",
             "filename": "player.png",
             "inode": "3096224744558090",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "ee5aabfa-078a-49e3-9bd3-05ebcd77882a",
@@ -8995,7 +9037,7 @@
             "type": "actor_animated",
             "filename": "player_sprite.png",
             "inode": "2533274791282797",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "7f1e6bf2-64d0-4c24-9dc7-dff33009072f",
@@ -9004,7 +9046,7 @@
             "type": "static",
             "filename": "radio.png",
             "inode": "2814749767847436",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "d263b4bc-c6b3-4be2-8a67-99b1996965f9",
@@ -9013,7 +9055,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "2814749767847439",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "dfbb4140-9eae-47d2-9e8e-da9847cd6805",
@@ -9022,7 +9064,7 @@
             "type": "static",
             "filename": "sage.png",
             "inode": "2814749767847440",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "4d5422fb-6e64-42fb-8952-12cef6d3285a",
@@ -9031,7 +9073,7 @@
             "type": "animated",
             "filename": "savepoint.png",
             "inode": "3096224744558098",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "578be118-3fad-4b50-9070-060a15e3d744",
@@ -9040,7 +9082,7 @@
             "type": "static",
             "filename": "seed.png",
             "inode": "4222124651400728",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "e5b96078-d6cc-4d97-9eef-a12fa26599a9",
@@ -9049,7 +9091,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "4503599628111385",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -9058,7 +9100,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2814749767847454",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "eca20757-c3b2-4443-b0cc-31ea3e2a0051",
@@ -9067,7 +9109,7 @@
             "type": "animated",
             "filename": "sword.png",
             "inode": "3096224744558115",
-            "_v": 1614576628718
+            "_v": 1614708185677
         },
         {
             "id": "84cd73df-fec7-4a78-9b23-cd1964988d98",
@@ -9076,7 +9118,7 @@
             "type": "static",
             "filename": "torch.png",
             "inode": "2814749767847464",
-            "_v": 1614576628721
+            "_v": 1614708185677
         }
     ],
     "palettes": [
@@ -9225,7 +9267,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "6755399441796153",
-            "_v": 1614576628596
+            "_v": 1614708185596
         }
     ],
     "variables": [
@@ -9256,6 +9298,14 @@
         {
             "id": "25",
             "name": "Q6 Checked Out"
+        },
+        {
+            "id": "30",
+            "name": "Show egg man"
+        },
+        {
+            "id": "31",
+            "name": "Show Clerk"
         },
         {
             "id": "75",
@@ -9384,14 +9434,6 @@
         {
             "id": "7e73e22f-bacc-42d0-b30b-e7af2cb59fff__L3",
             "name": "Enemy Miss"
-        },
-        {
-            "id": "30",
-            "name": "Show egg man"
-        },
-        {
-            "id": "31",
-            "name": "Show Clerk"
         }
     ],
     "settings": {
@@ -9400,9 +9442,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 466,
-        "worldScrollY": 450,
-        "zoom": 200,
+        "worldScrollX": 756,
+        "worldScrollY": 1159,
+        "zoom": 300,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
