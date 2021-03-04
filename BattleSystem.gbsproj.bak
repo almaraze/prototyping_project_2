@@ -5990,7 +5990,7 @@
                             "except... THE\nCAKE!"
                         ],
                         "avatarId": "",
-                        "__comment": true
+                        "__comment": false
                     }
                 },
                 {
@@ -6626,7 +6626,7 @@
                                         "Better check the\nfridge and pantry\nfor ingredients."
                                     ],
                                     "avatarId": "",
-                                    "__comment": true
+                                    "__comment": false
                                 }
                             },
                             {
@@ -37054,7 +37054,7 @@
         "startY": 7,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1248,
+        "worldScrollX": 385,
         "worldScrollY": 0,
         "zoom": 200,
         "customColorsEnabled": false,
